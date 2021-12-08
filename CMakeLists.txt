@@ -1,8 +1,4 @@
-cmake_minimum_required(VERSION 3.11)
-
-project(abcg)
-
-include(cmake/Common.cmake)
-
-add_subdirectory(abcg)
-add_subdirectory(examples)
+project(Cat)
+add_executable(${PROJECT_NAME} main.cpp model.cpp openglwindow.cpp
+                               trackball.cpp gamedata.hpp)
+enable_abcg(${PROJECT_NAME})
